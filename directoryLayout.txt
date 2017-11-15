@@ -1,0 +1,47 @@
+
+
+roles/
+    common/
+        defaults/
+            main.yml # default variable values that apply to all hosts
+        tasks/
+            main.yml # tasks to run on all hosts
+
+    core_switch/
+        defaults/
+            main.yml # default variable values that apply to all core switches
+        tasks/
+            main.yml # tasks to run on all core switches
+        files/
+        templates/
+            6880.j2 # reference item.model?
+            6840.j2
+            3850.j2
+        meta/
+            main.yml # use to configure dependencies (other roles to run first)
+
+    access_switch/
+        defaults/
+            main.yml
+        tasks/
+            main.yml
+        templates/
+            3850.j2
+
+    att_router/
+        defaults/
+            main.yml
+        tasks/
+            main.yml
+
+    ntt_router/
+        defaults/
+            main.yml
+        tasks/
+            main.yml
+
+    colt_router/
+        defaults/
+            main.yml
+        tasks/
+            main.yml

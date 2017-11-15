@@ -1,0 +1,22 @@
+---
+- name: Add CSPC collector (10.65.1.120) to ACL 98
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      timeout: 30
+      authorize: yes
+  hosts: development
+  gather_facts: no
+  connection: local
+  serial: 3
+  
+  tasks:
+   - name: Backup config, modify ACL and save changes
+     ios_config:
+      lines:
+       - access-list 98 permit 10.65.1.120
+       - file prompt quiet
+      match: line
+      provider: "{{ cli }}"
+      backup: yes
+      save_when: modified
