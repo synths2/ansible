@@ -27,7 +27,7 @@
 10.78.255.1
 10.78.6.11
 10.78.6.10
-10.78.6.12 connection=telnet
+10.78.6.12 ansible_connection=telnet
 
 [EMEA:children]
 PARIS
