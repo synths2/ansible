@@ -20,4 +20,3 @@
       provider: "{{ cli }}"
       backup: yes
       save_when: modified
----
