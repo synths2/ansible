@@ -5,7 +5,7 @@
       host: "{{ inventory_hostname }}"
       timeout: 30
       authorize: yes
-  hosts: development
+  hosts: "{{ host | default('development') }}"
   gather_facts: no
   connection: local
   serial: 3
