@@ -17,6 +17,13 @@
 [READING]
 [SLOUGH]
 [DUSSELDORF]
+10.77.254.1
+10.77.255.1
+10.77.253.1
+10.77.6.10
+# 10.77.6.12 telnet only
+# 10.77.6.13 telnet only
+
 [FRANKFURT]
 [BRUSSELS]
 10.78.253.1
@@ -27,7 +34,7 @@
 10.78.255.1
 10.78.6.11
 10.78.6.10
-10.78.6.12 ansible_connection=telnet
+#10.78.6.12 telnet only
 
 [EMEA:children]
 PARIS
