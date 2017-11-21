@@ -42,6 +42,9 @@
 #10.65.11.13 telnet only
 #10.65.11.14 telnet only
 #10.65.1.5 telnet only
+#10.65.1.6 telnet only
+10.65.1.7
+10.65.1.13
 10.65.1.30
 10.65.1.31
 10.65.1.76
@@ -64,6 +67,7 @@
 10.65.1.93
 10.65.1.94
 10.65.1.95
+#10.65.250.60 old riverbed switch, nothing connected
 
 [SLOUGH]
 10.68.254.1
