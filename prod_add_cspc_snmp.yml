@@ -15,6 +15,7 @@
      ios_config:
       lines:
        - access-list 98 permit 10.65.1.120
+       - access-list 98 permit 10.65.1.121
        - file prompt quiet
       match: line
       provider: "{{ cli }}"
